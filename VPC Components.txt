@@ -1,0 +1,38 @@
+VPC Components
+
+Subnet: 
+A subnet in VPC is something a range of IP addresses. 
+Public Subnet where resources are exposed to the internet through Internet Gateway and Private Subnet where resources are not exposed to the outside world.
+
+Route Table: 
+They are the set of rules used to decide where the network traffic has to be managed. It specifies the destination i.e IP address and target. 
+With the use of route tables, users can determine where the network traffic will be directed from your subnet or gateway.
+
+Virtual Private Gateway: It is the VPN(Virtual Private Network) hub on the Amazon side of the VPN connection to have a secure transaction. Users can attach it to the VPC from which they want to create the VPN connection.
+
+NAT Gateway: Network Address Translation (NAT) Gateway is used when higher bandwidth, availability with lesser management effort is required. It updates the routing table of the private subnet such that it sends the traffic to the NAT gateway. It supports only UDP, TCP, and ICMP protocols.
+
+VPC Peering: A VPC peering connection allows you to route traffic between two Virtual Private Clouds using IPv4 or IPv6 private addresses.
+Users can create a VPC peering connection between their own VPC with a VPC in another AWS account.
+This connection helps you to smoothly transfer the data.
+
+Security Groups:It consists set of firewalls rules that control the traffic for your sample.
+You can have a single security group associated with multiple instances.
+
+Elastic IP: It is a static IP address which is a reserved public IP address that can be assigned to any Instance in a particular region and never changes.
+
+Network Access Control Lists (NACL): 
+It is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets.
+It adds an additional layer of security to your VPC.
+
+Customer Gateway: VPN connection links your network (or data) to your Amazon VPC (virtual private cloud).
+A customer gateway is a presenter on your side of that connection. It can be a physical or software appliance.
+
+Network Interface: It’s a connection between private and public networks.
+Network traffic is automatically shifted to the new instance if you move it from one instance to the other.
+
+VPC Endpoints:
+It allows VPC to make a connection with other services of AWS without using the internet.
+They are of two types, Interference endpoints, and  Gateway endpoints. They are scaled, redundant, and highly available VPC components.
+
+IP addressing: With the IP Addressing, you can assign your VPCs and subnets, the IPv4 addresses and IPv6 

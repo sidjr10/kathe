@@ -1,0 +1,9 @@
+FROM centos:latest    	        							#we are installing the tomcat in centos image
+RUN yum install java -y  								# we require java as pre-requisite 
+RUN mkdir /opt/tomcat    								# we need path where pacakge need to be install
+workdir /opt/tomcat	 								# in this location you can see the files of tomacat pacakge. also logs etc.
+ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.75/bin/apache-tomcat-9.0.75.tar.gz .     # downloading the tomacat zip package from internet
+RUN tar -xvzf apache tomcat-9.0.75.tar.gz						   # unzip the package and setting the permission
+RUN mv apache tomcat-9.0.75/* /opt/tomcat						   # move the package from download folder to /opt
+EXPOSE 8080										   # open the firewall port 8080 generally, this port is for apache server
+CMD ["opt/tomcat/bin/catalina.sh", "run"]						   # this is the command file which need to run before using the apacheA

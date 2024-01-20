@@ -1,0 +1,17 @@
+FOR AWS AMI
+https://www.jenkins.io/doc/tutorials/tutorial-for-installing-jenkins-on-AWS/
+
+FOR UBUNTU
+https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-22-04
+
+
+require additional plugins
+
+AddthePluginsDashboard->ManageJenkins->Plugins->AvailablepluginsPluginsforSonar/Jfrog–
+Sonar Gerrit
+SonarQube Scanner
+SonarQube Generic Coverage
+Sonar Quality Gates
+Quality Gates
+Artifactory
+Jfrog
